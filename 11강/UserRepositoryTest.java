@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Assertions;
 
 import java.time.LocalDateTime;
 import java.util.Optional;
-@@ -54,4 +59,34 @@ public void update(){
+ public void update(){
             userRepository.save(selectUser);
         });
     }
