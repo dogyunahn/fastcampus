@@ -8,7 +8,7 @@ import java.util.Optional;
 
 public class UserRepositoryTest extends StudyApplicationTests {
 
-@@ -26,4 +28,30 @@ public void create(){
+public void create(){
         User newUser = userRepository.save(user);
         System.out.println("User : " + newUser);
     }
