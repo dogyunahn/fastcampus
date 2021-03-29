@@ -12,7 +12,7 @@ public void create(){
         User newUser = userRepository.save(user);
         System.out.println("User : " + newUser);
     }
-
+        //두 번쨰
     @Test
     public User read(@RequestParam Long id){
 
@@ -30,7 +30,7 @@ public void create(){
     public void update(){
         Optional<User> user = userRepository.findById(2L);
         user.ifPresent(selectUser -> {
-            //셋팅한 값들만 update 해준다.(세팅하지 않았고 기존에 있던 값에는 덮어쓰기 하지 않음)
+        
             selectUser.setAccount("pppp");
             selectUser.setUpdatedAt(LocalDateTime.now());
             selectUser.setUpdatedBy("update method");
