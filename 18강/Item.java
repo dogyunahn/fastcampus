@@ -1,11 +1,33 @@
+package com.example.study.model.entity;
+
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.*;
-import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
-@@ -19,14 +20,35 @@
+@Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@Id
+@Entity
+public class Item {
+
+    
+
+    private String content;
+
+    private String title;
+
+    private Long partnerId;
+
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
