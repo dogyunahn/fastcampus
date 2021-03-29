@@ -4,7 +4,6 @@ package com.example.study.repository;
 import com.example.study.StudyApplicationTests;
 import com.example.study.model.entity.Item;
 import org.junit.jupiter.api.Assertions;
-@@ -9,29 +10,31 @@
 import java.util.Optional;
 
 public class ItemRepositoryTest extends StudyApplicationTests {
