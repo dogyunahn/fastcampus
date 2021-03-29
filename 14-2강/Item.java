@@ -21,7 +21,6 @@ import java.util.List;
 public class Item {
 
     @Id
-@@ -26,11 +25,8 @@
 
     private String content;
 
