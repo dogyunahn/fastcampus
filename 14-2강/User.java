@@ -21,7 +21,7 @@ import java.util.List;
 public class User {
 
     @Id
-@@ -27,11 +30,21 @@
+
     //테이블에서는 phone_number이지만 JPA에서 자동으로 매칭 시켜줌.
     private String phoneNumber;
 
